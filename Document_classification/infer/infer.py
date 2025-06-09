@@ -14,7 +14,7 @@ args = ClassificationDeployArguments(
 import torch
 from transformers import BertConfig, BertForSequenceClassification
 fine_tuned_model_ckpt = torch.load(
-    args.downstream_model_checkpoint_fpath,
+    args.downstream_model_checkpoint_fpath, 
     map_location=torch.device("cpu")
 )
 pretrained_model_config = BertConfig.from_pretrained(

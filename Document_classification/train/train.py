@@ -6,9 +6,10 @@ print('hello world!!');
 subprocess.call('./cleancache.sh', shell=True)
 
 # 모델 환결 설정
-import torch
+import torch  
+# PyTorch는 신경망 구축에 사용되는 소프트웨어 기반 오픈 소스 딥러닝 프레임워크로 , 머신러닝 라이브러리와 파이썬 기반의 고급 api를 결합한 것이다.
 from ratsnlp.nlpbook.classification import ClassificationTrainArguments
-args = ClassificationTrainArguments (
+args = ClassificationTrainArguments ( 
     pretrained_model_name="beomi/kcbert-base",
     downstream_corpus_name="nsmc",
     downstream_model_dir="/gdrive/My Drive/nlpbook/checkpoint-doccls",
