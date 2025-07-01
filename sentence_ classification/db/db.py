@@ -3,10 +3,10 @@ import csv
 
 # 1. DB 연결
 conn = pymysql.connect(
-    host='192.168.0.20',
+    host='127.0.0.1',
     port=31217,
     user='root',
-    password='Modern#600',
+    password='qwer1234',
     db='nlp',
     charset='utf8mb4'
 )
